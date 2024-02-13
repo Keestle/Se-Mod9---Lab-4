@@ -23,16 +23,6 @@ const getFruit = async (req, res) => {
 
 // additional functionality added below to update 
 
-const updateFruit = async (req,res) => {
-    try {
-        const updatedData = await Models.updateFruit(req.body);
-        res.status(200).json({result: 200, data: updatedData});
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({result: 500, error: err.message});
-    }
-}
 module.exports = {
 getFruit,
-updateFruit
 }

@@ -9,8 +9,4 @@ router.get('/', (req, res) => {
 Controllers.fruitController.getFruit(req.body, res)
 })
 
-router.put('/update', (req, res) => {
-    Controllers.fruitController.updateFruit(req.body, res)
-    })
-
 module.exports = router;
